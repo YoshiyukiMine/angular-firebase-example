@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//追加
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule, // 追加
+    ReactiveFormsModule // 追加
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [AppComponent],
+  bootstrap: [AppComponent],
+  declarations: [AppComponent]
 })
 export class AppModule { }
