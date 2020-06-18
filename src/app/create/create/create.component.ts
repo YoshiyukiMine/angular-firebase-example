@@ -14,7 +14,10 @@ export class CreateComponent implements OnInit {
   config: SwiperConfigInterface = {
     loop: true,
     navigation: true,
-    pagination: true,
+    pagination: {
+      el: '.pager',
+      clickable: true
+    },
     centeredSlides: true,
     slidesPerView: 3
   };
@@ -23,7 +26,7 @@ export class CreateComponent implements OnInit {
   form = this.fb.group({
     name: ['', [
       Validators.required,
-      Validators.maxLength(40)
+      Validators.maxLength(10)
     ]],
     gender: ['', [
       Validators.required,
