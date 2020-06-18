@@ -10,12 +10,14 @@ img {
   max-width: 100%;
 }
 
-  .pager {
+.pager {
     text-align: center;
     span {
       margin: 0 4px;
   }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.container {
+  padding: 0 24px;
+}
+
