@@ -13,12 +13,11 @@ export class WelcomeComponent implements OnInit {
 
   ) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   login() {
     this.authService.login();
-
   }
 
 }
