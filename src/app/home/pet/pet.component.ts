@@ -10,15 +10,9 @@ export class PetComponent implements OnInit {
 
   @Input() pet: Pet;
 
-  maxExp = 400;
-
   constructor() { }
 
   ngOnInit(){
-  }
-
-  getExpPercentage(): number {
-    return this.pet.exp / this.maxExp * 100;
   }
 
 }
